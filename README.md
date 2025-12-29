@@ -50,3 +50,14 @@ pip install -r requirements.txt
 - Pandas DataFrames for all data handling
 - Document mathematical logic of financial indicators
 - Avoid look-ahead bias in backtesting
+
+## Utilities
+
+The project includes a shared utilities module (`src/utils/`) for common operations:
+
+- **Path Resolution**: `get_project_root()`, `resolve_data_path()`, `resolve_model_path()`
+- **Data Loading**: `load_raw_data()`, `load_processed_data()`
+- **Model Loading**: `load_trained_model()` (auto-detects .pkl/.json)
+- **Configuration**: `load_config()`, `get_config_value()`
+
+See [OPTIMIZATION.md](OPTIMIZATION.md) for details on code optimizations and usage examples.
