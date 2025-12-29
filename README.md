@@ -1,11 +1,11 @@
-# AI Trading Lab
+# Trading Lab
 
 A robust, modular stock forecasting system using Python, MetaTrader 5, and machine learning.
 
 ## Project Structure
 
 ```
-ai-trading-lab/
+trading-lab/
 ├── data/               # Storage for raw and processed market data
 │   ├── raw/            # Untouched CSVs or JSONs from MT5/APIs
 │   └── processed/      # Cleaned data with features added
