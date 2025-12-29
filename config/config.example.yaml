@@ -1,0 +1,33 @@
+# Example Configuration File
+# Copy this to config.yaml and fill in your actual values
+
+# MetaTrader 5 Configuration
+mt5:
+  login: YOUR_MT5_LOGIN
+  password: YOUR_MT5_PASSWORD
+  server: YOUR_MT5_SERVER
+  path: /path/to/terminal64.exe  # Path to MT5 terminal executable
+
+# Trading Parameters
+trading:
+  symbol: "SPY"  # Stock index symbol
+  timeframe: "D1"  # Daily timeframe
+  lookback_days: 252  # Trading days for historical data
+
+# Model Hyperparameters
+model:
+  xgboost:
+    n_estimators: 100
+    max_depth: 6
+    learning_rate: 0.1
+  
+  lstm:
+    units: 50
+    epochs: 100
+    batch_size: 32
+
+# Backtesting Parameters
+backtest:
+  initial_capital: 100000
+  commission: 0.001  # 0.1% commission
+  slippage: 0.0001  # 0.01% slippage
